@@ -378,7 +378,7 @@
         <predecessor id="1" predecessor-id="86" type="FS"/>
       </predecessors>
     </task>
-    <task id="94" name="Plan de Mercadeo" note="" work="432000" start="20220510T170000Z" end="20220531T170000Z" work-start="20220511T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="94" name="Nuevo plan de Mercadeo" note="" work="432000" start="20220510T170000Z" end="20220531T170000Z" work-start="20220511T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="93" type="FS"/>
       </predecessors>
