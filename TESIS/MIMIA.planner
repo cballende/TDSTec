@@ -159,7 +159,7 @@
               <task id="40" name="App" note="" work="28800" start="20180723T170000Z" end="20180724T170000Z" work-start="20180724T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work"/>
               <task id="41" name="Prueba Unitaria" note="" work="864000" start="20180723T170000Z" end="20180903T170000Z" work-start="20180724T080000Z" percent-complete="10" priority="0" type="normal" scheduling="fixed-work"/>
             </task>
-            <task id="42" name="Pueba Gral" note="" work="201600" start="20180903T170000Z" end="20180912T170000Z" work-start="20180904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="42" name="Prueba Gral" note="" work="201600" start="20180903T170000Z" end="20180912T170000Z" work-start="20180904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
               <predecessors>
                 <predecessor id="1" predecessor-id="39" type="FS"/>
               </predecessors>
@@ -219,27 +219,27 @@
             <predecessor id="1" predecessor-id="43" type="FS"/>
           </predecessors>
         </task>
-        <task id="55" name="Version MIMIA OPT" note="" work="2592000" start="20190131T170000Z" end="20190606T170000Z" work-start="20190201T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="55" name="Version MIMIA OPT" note="" work="2592000" start="20190131T170000Z" end="20190606T170000Z" work-start="20190201T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="54" type="FS"/>
           </predecessors>
         </task>
-        <task id="56" name="Version MIMIA MEMS" note="" work="2592000" start="20190606T170000Z" end="20191010T170000Z" work-start="20190607T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="56" name="Version MIMIA MEMS" note="" work="2592000" start="20190606T170000Z" end="20191010T170000Z" work-start="20190607T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="55" type="FS"/>
           </predecessors>
         </task>
-        <task id="57" name="Version CIAA MOTE" note="" work="2476800" start="20191010T170000Z" end="20200207T170000Z" work-start="20191011T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="57" name="Version CIAA MOTE" note="" work="2476800" start="20191010T170000Z" end="20200207T170000Z" work-start="20191011T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="56" type="FS"/>
           </predecessors>
         </task>
-        <task id="58" name="Version MIMIA STICK" note="" work="864000" start="20200207T170000Z" end="20200320T170000Z" work-start="20200210T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="58" name="Version MIMIA STICK" note="" work="864000" start="20200207T170000Z" end="20200320T170000Z" work-start="20200210T080000Z" percent-complete="60" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="57" type="FS"/>
           </predecessors>
         </task>
-        <task id="59" name="Version MIMIA XSocket" note="" work="576000" start="20200320T170000Z" end="20200417T170000Z" work-start="20200323T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="59" name="Version MIMIA XSocket" note="" work="576000" start="20200320T170000Z" end="20200417T170000Z" work-start="20200323T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="58" type="FS"/>
           </predecessors>
