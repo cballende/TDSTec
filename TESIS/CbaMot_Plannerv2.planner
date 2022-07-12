@@ -31,63 +31,63 @@
     </calendar>
   </calendars>
   <tasks>
-    <task id="1" name="INICIO" note="" work="1152000" start="20171030T000000Z" end="20171222T170000Z" work-start="20171030T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="1" name="INICIO" note="" work="864000" start="20171030T000000Z" end="20171208T170000Z" work-start="20171030T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <task id="2" name="Definicion obejtivos" note="" work="288000" start="20171030T000000Z" end="20171110T170000Z" work-start="20171030T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
       <task id="3" name="Investigacion y Analisis" note="" work="576000" start="20171110T170000Z" end="20171208T170000Z" work-start="20171113T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="2" type="FS"/>
         </predecessors>
       </task>
-      <task id="4" name="Decisiones" note="" work="288000" start="20171208T170000Z" end="20171222T170000Z" work-start="20171211T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <task id="4" name="Decisiones" note="" work="0" start="20171208T170000Z" end="20171208T170000Z" work-start="20171208T170000Z" percent-complete="100" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="3" type="FS"/>
         </predecessors>
       </task>
     </task>
-    <task id="5" name="PLANEACI&#xD3;N" note="" work="1814400" start="20171222T170000Z" end="20180306T170000Z" work-start="20171225T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="5" name="PLANEACI&#xD3;N" note="" work="1814400" start="20171208T170000Z" end="20180220T170000Z" work-start="20171211T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="1" type="FS"/>
       </predecessors>
-      <task id="6" name="Alcance" note="" work="633600" start="20171222T170000Z" end="20180123T170000Z" work-start="20171225T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="7" name="Esquemas de Dise&#xF1;o " note="" work="57600" start="20171222T170000Z" end="20171226T170000Z" work-start="20171225T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
-        <task id="8" name="Investigacion y Eleccion" note="" work="86400" start="20171226T170000Z" end="20171229T170000Z" work-start="20171227T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <task id="6" name="Alcance" note="" work="633600" start="20171208T170000Z" end="20180109T170000Z" work-start="20171211T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="7" name="Esquemas de Dise&#xF1;o " note="" work="57600" start="20171208T170000Z" end="20171212T170000Z" work-start="20171211T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="8" name="Investigacion y Elecci&#xF3;n" note="" work="86400" start="20171212T170000Z" end="20171215T170000Z" work-start="20171213T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="7" type="FS"/>
           </predecessors>
         </task>
-        <task id="9" name="Bocetos El&#xE9;ctricos" note="" work="86400" start="20171229T170000Z" end="20180103T170000Z" work-start="20180101T080000Z" percent-complete="79" priority="0" type="normal" scheduling="fixed-work">
+        <task id="9" name="Bocetos El&#xE9;ctricos" note="" work="86400" start="20171215T170000Z" end="20171220T170000Z" work-start="20171218T080000Z" percent-complete="79" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="8" type="FS"/>
           </predecessors>
         </task>
-        <task id="10" name="Bocetos de Redes" note="" work="115200" start="20180103T170000Z" end="20180109T170000Z" work-start="20180104T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <task id="10" name="Bocetos de Redes" note="" work="115200" start="20171220T170000Z" end="20171226T170000Z" work-start="20171221T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="9" type="FS"/>
           </predecessors>
         </task>
-        <task id="11" name="Bocetos de Aplicaciones" note="" work="288000" start="20180109T170000Z" end="20180123T170000Z" work-start="20180110T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <task id="11" name="Bocetos de Aplicaciones" note="" work="288000" start="20171226T170000Z" end="20180109T170000Z" work-start="20171227T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="10" type="FS"/>
           </predecessors>
         </task>
       </task>
-      <task id="12" name="Planeamiento de tareas" note="" work="28800" start="20180123T170000Z" end="20180124T170000Z" work-start="20180124T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+      <task id="12" name="Planeamiento de tareas" note="" work="28800" start="20180109T170000Z" end="20180110T170000Z" work-start="20180110T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="6" type="FS"/>
         </predecessors>
       </task>
-      <task id="13" name="Estimacion de Costos" note="" work="288000" start="20180123T170000Z" end="20180206T170000Z" work-start="20180124T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+      <task id="13" name="Estimacion de Costos" note="" work="288000" start="20180109T170000Z" end="20180123T170000Z" work-start="20180110T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="6" type="FS"/>
         </predecessors>
       </task>
-      <task id="14" name="Obtener Fondos" note="" work="864000" start="20180123T170000Z" end="20180306T170000Z" work-start="20180124T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+      <task id="14" name="Obtener Fondos" note="" work="864000" start="20180109T170000Z" end="20180220T170000Z" work-start="20180110T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="6" type="FS"/>
         </predecessors>
       </task>
     </task>
-    <task id="15" name="EJECUCI&#xD3;N" note="" work="63072000" start="20180207T000000Z" end="20231225T170000Z" work-start="20180207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="15" name="EJECUCI&#xD3;N" note="" work="57888000" start="20180207T000000Z" end="20230821T170000Z" work-start="20180207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20180202T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="13" type="FS"/>
@@ -192,7 +192,7 @@
               <task id="48" name="App" note="" work="28800" start="20180723T170000Z" end="20180724T170000Z" work-start="20180724T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work"/>
               <task id="49" name="Prueba Unitaria" note="" work="864000" start="20180723T170000Z" end="20180903T170000Z" work-start="20180724T080000Z" percent-complete="10" priority="0" type="normal" scheduling="fixed-work"/>
             </task>
-            <task id="50" name="Pueba Gral" note="" work="201600" start="20180903T170000Z" end="20180912T170000Z" work-start="20180904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="50" name="Prueba Gral" note="" work="201600" start="20180903T170000Z" end="20180912T170000Z" work-start="20180904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
               <predecessors>
                 <predecessor id="1" predecessor-id="47" type="FS"/>
               </predecessors>
@@ -372,13 +372,13 @@
           </predecessors>
         </task>
       </task>
-      <task id="91" name="Pruebas en campo" note="" work="2592000" duration="2592000" start="20230105T170000Z" end="20230511T170000Z" work-start="20230106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <task id="91" name="Pruebas en campo" note="" work="0" start="20230105T170000Z" end="20230105T170000Z" work-start="20230105T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="82" type="FS"/>
           <predecessor id="1" predecessor-id="86" type="FS"/>
         </predecessors>
       </task>
-      <task id="92" name="Versi&#xF3;n  0.9b (PMV)" note="Producto para pruebas en campo del cliente.&#10;Se reportan las modificaciones sobre la ejecucion." work="3571200" start="20230105T170000Z" end="20230620T170000Z" work-start="20230106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="92" name="Versi&#xF3;n  0.9b (PMV)" note="Producto para pruebas en campo del cliente.&#10;Se reportan las modificaciones sobre la ejecucion." work="979200" start="20230105T170000Z" end="20230214T170000Z" work-start="20230106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="82" type="FS"/>
         </predecessors>
@@ -401,7 +401,7 @@
             <predecessor id="1" predecessor-id="104" type="FS"/>
           </predecessors>
         </task>
-        <task id="103" name="Etapa de pruebas en campo" note="" work="2592000" start="20230214T170000Z" end="20230620T170000Z" work-start="20230215T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="103" name="Etapa de pruebas en campo" note="" work="0" start="20230214T170000Z" end="20230214T170000Z" work-start="20230214T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="102" type="FS"/>
           </predecessors>
@@ -412,44 +412,44 @@
           </predecessors>
         </task>
       </task>
-      <task id="105" name="Versi&#xF3;n 1.0" note="" work="3859200" start="20230620T170000Z" end="20231225T170000Z" work-start="20230621T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="105" name="Versi&#xF3;n 1.0" note="" work="3859200" start="20230214T170000Z" end="20230821T170000Z" work-start="20230215T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="92" type="FS"/>
         </predecessors>
-        <task id="106" name="Modificaci&#xF3;n Firmware" note="" work="115200" start="20230620T170000Z" end="20230626T170000Z" work-start="20230621T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-        <task id="107" name="Modificaci&#xF3;n pcb" note="" work="144000" start="20230626T170000Z" end="20230703T170000Z" work-start="20230627T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="106" name="Modificaci&#xF3;n Firmware" note="" work="115200" start="20230214T170000Z" end="20230220T170000Z" work-start="20230215T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="107" name="Modificaci&#xF3;n pcb" note="" work="144000" start="20230220T170000Z" end="20230227T170000Z" work-start="20230221T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="106" type="FS"/>
           </predecessors>
         </task>
-        <task id="108" name="Modificaci&#xF3;n gabinete" note="" work="115200" start="20230703T170000Z" end="20230707T170000Z" work-start="20230704T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="108" name="Modificaci&#xF3;n gabinete" note="" work="115200" start="20230227T170000Z" end="20230303T170000Z" work-start="20230228T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="107" type="FS"/>
           </predecessors>
         </task>
-        <task id="109" name="Matriceria" note="" work="691200" start="20230707T170000Z" end="20230810T170000Z" work-start="20230710T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="109" name="Matriceria" note="" work="691200" start="20230303T170000Z" end="20230406T170000Z" work-start="20230306T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="108" type="FS"/>
           </predecessors>
         </task>
-        <task id="110" name="Doc manual servicio" note="" work="201600" start="20230810T170000Z" end="20230821T170000Z" work-start="20230811T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="110" name="Doc manual servicio" note="" work="201600" start="20230406T170000Z" end="20230417T170000Z" work-start="20230407T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="109" type="FS"/>
           </predecessors>
         </task>
-        <task id="111" name="Certificaci&#xF3;n" note="" work="2592000" start="20230821T170000Z" end="20231225T170000Z" work-start="20230822T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="111" name="Certificaci&#xF3;n" note="" work="2592000" start="20230417T170000Z" end="20230821T170000Z" work-start="20230418T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="110" type="FS"/>
           </predecessors>
         </task>
       </task>
     </task>
-    <task id="112" name="CULMINACI&#xD3;N" note="" work="432000" start="20231225T170000Z" end="20240115T170000Z" work-start="20231226T080000Z" percent-complete="16" priority="0" type="normal" scheduling="fixed-work">
+    <task id="112" name="CULMINACI&#xD3;N" note="" work="432000" start="20230821T170000Z" end="20230911T170000Z" work-start="20230822T080000Z" percent-complete="16" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="105" type="FS"/>
       </predecessors>
     </task>
-    <task id="113" name="Nuevo plan de Mercadeo" note="" work="432000" start="20240115T170000Z" end="20240205T170000Z" work-start="20240116T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="113" name="Nuevo plan de Mercadeo" note="" work="432000" start="20230911T170000Z" end="20231002T170000Z" work-start="20230912T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="112" type="FS"/>
       </predecessors>
