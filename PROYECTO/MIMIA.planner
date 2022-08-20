@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<project name="MIMIA" company="EmbedSA" manager="Sebastian Allende" phase="PA V1.0" project-start="20171030T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases>
+    <phase name="Repetidor"/>
+    <phase name="Concentrador"/>
+    <phase name="GateWay"/>
+    <phase name="Monitor V0.9"/>
+    <phase name="PA V1.0"/>
+    <phase name="Monitor V1.0"/>
+    <phase name="Monitor V0.1"/>
+    <phase name="PANCO V1.0"/>
+    <phase name="PA-MIWI-LORA V1.0"/>
+    <phase name="INICIACION"/>
+  </phases>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="INICIO" note="" work="1152000" start="20171030T000000Z" end="20171222T170000Z" work-start="20171030T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Definicion obejtivos" note="" work="288000" start="20171030T000000Z" end="20171110T170000Z" work-start="20171030T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="3" name="Investigacion y Analisis" note="" work="576000" start="20171110T170000Z" end="20171208T170000Z" work-start="20171113T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="4" name="Decisiones" note="" work="288000" start="20171208T170000Z" end="20171222T170000Z" work-start="20171211T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="3" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="5" name="PLANEACION" note="" work="1814400" start="20171222T170000Z" end="20180306T170000Z" work-start="20171225T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+      <task id="6" name="Alcance" note="" work="633600" start="20171222T170000Z" end="20180123T170000Z" work-start="20171225T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="7" name="Esquemas de Dise&#xF1;o " note="" work="57600" start="20171222T170000Z" end="20171226T170000Z" work-start="20171225T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="8" name="Investigacion y Eleccion" note="" work="86400" start="20171226T170000Z" end="20171229T170000Z" work-start="20171227T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="7" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="9" name="Bocetos El&#xE9;ctricos" note="" work="86400" start="20171229T170000Z" end="20180103T170000Z" work-start="20180101T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="8" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="10" name="Bocetos de Redes" note="" work="115200" start="20180103T170000Z" end="20180109T170000Z" work-start="20180104T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="9" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="11" name="Bocetos de Aplicaciones" note="" work="288000" start="20180109T170000Z" end="20180123T170000Z" work-start="20180110T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="10" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="12" name="Planeamiento de tareas" note="" work="28800" start="20180123T170000Z" end="20180124T170000Z" work-start="20180124T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="6" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="13" name="Estimacion de Costos" note="" work="288000" start="20180123T170000Z" end="20180206T170000Z" work-start="20180124T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="6" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="14" name="Obtener Fondos" note="" work="864000" start="20180123T170000Z" end="20180306T170000Z" work-start="20180124T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="6" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="15" name="EJECUCI&#xD3;N" note="" work="32227200" start="20180207T000000Z" end="20220419T170000Z" work-start="20180207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20180202T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="13" type="FS"/>
+      </predecessors>
+      <task id="16" name="Versiones 0.1" note="" work="16617600" start="20180207T000000Z" end="20200417T170000Z" work-start="20180207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="17" name="Compra de equipos e insumos" note="" work="144000" start="20180207T000000Z" end="20180213T170000Z" work-start="20180207T080000Z" percent-complete="95" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20180207T000000Z"/>
+        </task>
+        <task id="18" name="Programacion de Firmware" note="" work="4464000" start="20180214T000000Z" end="20180912T170000Z" work-start="20180214T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="19" name="Firmware monitor" note="" work="950400" start="20180214T000000Z" end="20180330T170000Z" work-start="20180214T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="20" name="Aplicacion Gral" note="" work="864000" start="20180214T000000Z" end="20180327T170000Z" work-start="20180214T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <task id="21" name="Imple y Prueb unitarias" note="" work="864000" start="20180214T000000Z" end="20180327T170000Z" work-start="20180214T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+                <constraint type="must-start-on" time="20180214T000000Z"/>
+              </task>
+            </task>
+            <task id="22" name="Pruebas Gral" note="" work="86400" start="20180327T170000Z" end="20180330T170000Z" work-start="20180328T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="20" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="23" name="Firmware PA" note="" work="1008000" start="20180330T170000Z" end="20180517T170000Z" work-start="20180402T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="19" type="FS"/>
+            </predecessors>
+            <task id="24" name="Aplicacion Gral" note="" work="892800" start="20180330T170000Z" end="20180511T170000Z" work-start="20180402T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <task id="25" name="App" note="" work="28800" start="20180330T170000Z" end="20180402T170000Z" work-start="20180402T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work"/>
+              <task id="26" name="Pueba unitarias" note="" work="864000" start="20180330T170000Z" end="20180511T170000Z" work-start="20180402T080000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work"/>
+            </task>
+            <task id="27" name="Prueba Gral" note="" work="115200" start="20180511T170000Z" end="20180517T170000Z" work-start="20180514T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="24" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="28" name="Firmware Repetidor" note="" work="316800" start="20180517T170000Z" end="20180531T170000Z" work-start="20180518T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="23" type="FS"/>
+            </predecessors>
+            <task id="29" name="Aplicacion Gral" note="" work="230400" start="20180517T170000Z" end="20180528T170000Z" work-start="20180518T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <task id="30" name="App" note="" work="28800" start="20180517T170000Z" end="20180518T170000Z" work-start="20180518T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work"/>
+              <task id="31" name="Prueba unitaria" note="" work="201600" start="20180517T170000Z" end="20180528T170000Z" work-start="20180518T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work"/>
+            </task>
+            <task id="32" name="Prueba Gral" note="" work="86400" start="20180528T170000Z" end="20180531T170000Z" work-start="20180529T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="29" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="33" name="Firmware PANCO" note="" work="1094400" start="20180531T170000Z" end="20180723T170000Z" work-start="20180601T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="28" type="FS"/>
+            </predecessors>
+            <task id="34" name="Aplicacion Gral" note="" work="892800" start="20180531T170000Z" end="20180712T170000Z" work-start="20180601T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <task id="35" name="App" note="" work="28800" start="20180531T170000Z" end="20180601T170000Z" work-start="20180601T080000Z" percent-complete="95" priority="0" type="normal" scheduling="fixed-work"/>
+              <task id="36" name="Pruebas unitarias" note="" work="864000" start="20180531T170000Z" end="20180712T170000Z" work-start="20180601T080000Z" percent-complete="10" priority="0" type="normal" scheduling="fixed-work"/>
+            </task>
+            <task id="37" name="Prueba Gral" note="" work="201600" start="20180712T170000Z" end="20180723T170000Z" work-start="20180713T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="34" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="38" name="Firmware GateWay" note="" work="1094400" start="20180723T170000Z" end="20180912T170000Z" work-start="20180724T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="33" type="FS"/>
+            </predecessors>
+            <task id="39" name="Aplicacion Gral" note="" work="892800" start="20180723T170000Z" end="20180903T170000Z" work-start="20180724T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <task id="40" name="App" note="" work="28800" start="20180723T170000Z" end="20180724T170000Z" work-start="20180724T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work"/>
+              <task id="41" name="Prueba Unitaria" note="" work="864000" start="20180723T170000Z" end="20180903T170000Z" work-start="20180724T080000Z" percent-complete="10" priority="0" type="normal" scheduling="fixed-work"/>
+            </task>
+            <task id="42" name="Prueba Gral" note="" work="201600" start="20180903T170000Z" end="20180912T170000Z" work-start="20180904T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="39" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+        <task id="43" name="Dise&#xF1;o y Armado de PCB" note="" work="2044800" start="20180912T170000Z" end="20181220T170000Z" work-start="20180913T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="18" type="FS"/>
+          </predecessors>
+          <task id="44" name="Dise&#xF1;o y diagramado" note="" work="1497600" start="20180912T170000Z" end="20181123T170000Z" work-start="20180913T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="45" name="Dise&#xF1;o Monitor" note="" work="115200" start="20180912T170000Z" end="20180918T170000Z" work-start="20180913T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+            <task id="46" name="Dise&#xF1;o PA" note="" work="345600" start="20180918T170000Z" end="20181004T170000Z" work-start="20180919T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="45" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="47" name="Dise&#xF1;o Repetidor" note="" work="172800" start="20181004T170000Z" end="20181012T170000Z" work-start="20181005T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="46" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="48" name="Dise&#xF1;o PANCO" note="" work="432000" start="20181012T170000Z" end="20181102T170000Z" work-start="20181015T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="47" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="49" name="Dise&#xF1;o GateWay" note="" work="432000" start="20181102T170000Z" end="20181123T170000Z" work-start="20181105T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="48" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="50" name="Impresion PCB" note="" work="28800" start="20181123T170000Z" end="20181126T170000Z" work-start="20181126T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="44" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="51" name="Grabado y Mecanizacion" note="" work="28800" start="20181126T170000Z" end="20181127T170000Z" work-start="20181127T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="50" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="52" name="Montaje de Componentes" note="" work="201600" start="20181127T170000Z" end="20181206T170000Z" work-start="20181128T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="51" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="53" name="Pruebas de Dispositivo" note="" work="288000" start="20181206T170000Z" end="20181220T170000Z" work-start="20181207T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="52" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="54" name="Pruebas Cadena Avance" note="" work="864000" start="20181220T170000Z" end="20190131T170000Z" work-start="20181221T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="43" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="55" name="Version MIMIA OPT" note="" work="2592000" start="20190131T170000Z" end="20190606T170000Z" work-start="20190201T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="54" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="56" name="Version MIMIA MEMS" note="" work="2592000" start="20190606T170000Z" end="20191010T170000Z" work-start="20190607T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="55" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="57" name="Version CIAA MOTE" note="" work="2476800" start="20191010T170000Z" end="20200207T170000Z" work-start="20191011T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="56" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="58" name="Version MIMIA STICK" note="" work="864000" start="20200207T170000Z" end="20200320T170000Z" work-start="20200210T080000Z" percent-complete="60" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="57" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="59" name="Version MIMIA XSocket" note="" work="576000" start="20200320T170000Z" end="20200417T170000Z" work-start="20200323T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="58" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="60" name="Versi&#xF3;n 0.9" note="" work="7113600" start="20200417T170000Z" end="20210330T170000Z" work-start="20200420T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="16" type="FS"/>
+        </predecessors>
+        <task id="61" name="CbaMot Monitor" note="" work="7113600" start="20200417T170000Z" end="20210330T170000Z" work-start="20200420T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="62" name="Actualizacion Firmware" note="" work="374400" start="20200417T170000Z" end="20200506T170000Z" work-start="20200420T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="63" name="optimizacion APP" note="" work="288000" start="20200417T170000Z" end="20200501T170000Z" work-start="20200420T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+            <task id="64" name="Pruebas" note="" work="86400" start="20200501T170000Z" end="20200506T170000Z" work-start="20200504T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="63" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="65" name="Dise&#xF1;o Gabinete" note="" work="259200" start="20200506T170000Z" end="20200519T170000Z" work-start="20200507T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="62" type="FS"/>
+            </predecessors>
+            <task id="66" name="Aprendizaje soft" note="" work="144000" start="20200506T170000Z" end="20200513T170000Z" work-start="20200507T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+            <task id="67" name="Dise&#xF1;o gabinete" note="" work="86400" start="20200513T170000Z" end="20200518T170000Z" work-start="20200514T080000Z" percent-complete="79" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="66" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="68" name="Impresion" note="" work="28800" start="20200518T170000Z" end="20200519T170000Z" work-start="20200519T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="67" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="69" name="Inactividad" note="" work="5760000" start="20200519T170000Z" end="20210223T170000Z" work-start="20200520T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="65" type="FS"/>
+            </predecessors>
+            <task id="70" name="INCUBADORA EMPR." note="" work="5760000" start="20200519T170000Z" end="20210223T170000Z" work-start="20200520T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          </task>
+          <task id="71" name="Actualizacion PCB" note="" work="720000" start="20210223T170000Z" end="20210330T170000Z" work-start="20210224T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="69" type="FS"/>
+            </predecessors>
+            <task id="72" name="Dise&#xF1;o PCB" note="" work="115200" start="20210223T170000Z" end="20210301T170000Z" work-start="20210224T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+            <task id="73" name="Gabado y Mecanizacion" note="" work="460800" start="20210301T170000Z" end="20210323T170000Z" work-start="20210302T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="72" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="74" name="Montaje" note="" work="144000" start="20210323T170000Z" end="20210330T170000Z" work-start="20210324T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="73" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+        </task>
+      </task>
+      <task id="75" name="Versi&#xF3;n 0.9a (Prototipo)" note="" work="1612800" start="20210330T170000Z" end="20210519T170000Z" work-start="20210331T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="60" type="FS"/>
+        </predecessors>
+        <task id="76" name="Pruebas y verificaci&#xF3;n" note="" work="432000" start="20210330T170000Z" end="20210420T170000Z" work-start="20210331T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="77" name="Actualizacion Firmware" note="" work="28800" start="20210420T170000Z" end="20210421T170000Z" work-start="20210421T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="76" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="78" name="Actualizacion PCB" note="" work="576000" start="20210421T170000Z" end="20210519T170000Z" work-start="20210422T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="77" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="79" name="Puebas de impacto servidor" note="" work="576000" start="20210330T170000Z" end="20210427T170000Z" work-start="20210331T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="80" name="Versi&#xF3;n  0.9b (PMV)" note="" work="3139200" start="20210519T170000Z" end="20211019T170000Z" work-start="20210520T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="75" type="FS"/>
+        </predecessors>
+        <task id="81" name="Modificaciones gabinete" note="" work="115200" start="20210519T170000Z" end="20210525T170000Z" work-start="20210520T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="82" name="Fabricaci&#xF3;n gabinetes" note="" work="201600" start="20210525T170000Z" end="20210603T170000Z" work-start="20210526T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="81" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="83" name="Documentaci&#xF3;n" note="" work="28800" start="20210603T170000Z" end="20210604T170000Z" work-start="20210604T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="82" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="84" name="Empaques" note="" work="201600" start="20210604T170000Z" end="20210615T170000Z" work-start="20210607T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="83" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="85" name="Etapa de pruebas cliente" note="" work="2592000" start="20210615T170000Z" end="20211019T170000Z" work-start="20210616T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="84" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="86" name="Versi&#xF3;n 1.0" note="" work="3744000" start="20211019T170000Z" end="20220419T170000Z" work-start="20211020T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="80" type="FS"/>
+        </predecessors>
+        <task id="87" name="Modificaci&#xF3;n Firmware" note="" work="115200" start="20211019T170000Z" end="20211025T170000Z" work-start="20211020T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="88" name="Modificaci&#xF3;n pcb" note="" work="28800" start="20211025T170000Z" end="20211026T170000Z" work-start="20211026T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="87" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="89" name="Modificaci&#xF3;n gabinete" note="" work="115200" start="20211026T170000Z" end="20211101T170000Z" work-start="20211027T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="88" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="90" name="Matriceria" note="" work="691200" start="20211101T170000Z" end="20211203T170000Z" work-start="20211102T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="89" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="91" name="Documentacion" note="" work="201600" start="20211203T170000Z" end="20211214T170000Z" work-start="20211206T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="90" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="92" name="Certificaci&#xF3;n" note="" work="2592000" start="20211214T170000Z" end="20220419T170000Z" work-start="20211215T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="91" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="93" name="CULMINACI&#xD3;N" note="" work="432000" start="20220419T170000Z" end="20220510T170000Z" work-start="20220420T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="86" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="94" name="Plan de Mercadeo" note="" work="432000" start="20220510T170000Z" end="20220531T170000Z" work-start="20220511T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="93" type="FS"/>
+      </predecessors>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>
