@@ -9,7 +9,7 @@
   
   El dispositivo se denomina CbAMoT.
   
-  ![boar dimage](TESIS/FOTOS/cbamoteV09a.png)
+  ![boar dimage](PROYECTO/FOTOS/cbamoteV09a.png)
   
 ## Primeras pruebas:
 
